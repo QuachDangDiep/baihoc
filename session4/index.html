@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector example</title>
+    <!-- Có 3 selector chính
+     1. selector ID :Sử dụng id của thẻ (tag)
+     2. selector Class:Sử dụng thuộc tính "class" của thẻ
+     3. selector Tag: Sử dụng tên thẻ
+    -->
+    <!--bắt đầu của 1 khai báo css: -->
+    <style>
+        /*selector ID:#duy nhat */
+        #spectial{
+            color: red;
+            text-decoration: underline;
+        }
+        /* selector Tag(sử dụng tên thẻ HTML)*/
+        p,h1{
+            font-size: 20px;
+            color: blue;
+        }
+        /* selector Class(sử dụng thuộc tính class)
+        có thể dùng chung nhiều thẻ*/
+        .highlight{
+            background-color: yellow;
+            font-weight: bold;
+            color: green;
+        }
+        ul li{
+            list-style-type: square;
+            color: brown;
+        }
+        ol il{
+            color: aqua;
+        }
+        /*selector Tag, thiết lập thuộc tính con*/
+        input[type="text"]{
+            border: 3px solid gray;
+        }
+        input[type="password"]{
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="spectial">Welcome to my site</h1>
+    <p>This is paragraph will have font size...</p>
+    <p class="highlight">This is anothor paragraph</p>
+    <ul>
+        <li class="highlight">list item 1</li>
+        <li>list item 2</li>
+        <li class="highlight"> list item 3</li>
+    </ul>
+    <ol>
+        <li>li1</li>
+        <li>li2</li>
+        <li>li3</li>
+        <li>li4</li>
+    </ol>
+    <h1>This is H1 tag</h1>
+    <input type="text" placeholder="Enter your name"></br>
+    <input type="text" placeholder="password">
+</body>
+</html>
